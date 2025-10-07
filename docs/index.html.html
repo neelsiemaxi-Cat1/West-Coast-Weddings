@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The West Coast Wedding Officiant</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700;900&display=swap"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f7f3f0;
+        color: #285260;
+      }
+
+      .font-playfair {
+        font-family: "Playfair Display", serif;
+      }
+      .hero-section {
+        background-image: url("Images/sea-trader.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .hero-title-box {
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 2.5rem 3rem;
+      }
+
+      .hero-title-box h1,
+      .hero-title-box h2,
+      .hero-title-box p {
+        color: #ffffff;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+      }
+
+      .carousel-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 1.5rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+      .carousel-slide {
+        display: none;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+      .carousel-slide.active {
+        display: block;
+      }
+      .carousel-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 10;
+      }
+      /* Optional: Add a subtle hover effect to cards */
+      .card-hover-effect:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 20px -3px rgba(0, 0, 0, 0.1),
+          0 6px 8px -2px rgba(0, 0, 0, 0.05);
+      }
+      /* Custom color for the stats section to match the image */
+      .stats-background {
+        background-color: #285260; /* Dark Teal/Blue */
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+      .stats-text {
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="sticky top-0 z-50 bg-white shadow-md p-4">
+      <div
+        class="container mx-auto flex justify-between items-center max-w-7xl"
+      >
+        <a href="#" class="text-xl font-bold text-[#285260]"
+          >The West Coast Wedding Officiant</a
+        >
+        <div class="hidden md:flex space-x-8">
+          <a
+            href="#about"
+            class="text-[#285260] hover:text-blue-500 transition-colors duration-200"
+            >About</a
+          >
+          <a
+            href="#meet-david"
+            class="text-[#285260] hover:text-blue-500 transition-colors duration-200"
+            >Meet David</a
+          >
+          <a
+            href="#partnerships"
+            class="text-[#285260] hover:text-blue-500 transition-colors duration-200"
+            >Partnerships</a
+          >
+          <a
+            href="#services"
+            class="text-[#285260] hover:text-blue-500 transition-colors duration-200"
+            >Services</a
+          >
+          <a
+            href="#reviews"
+            class="text-[#285260] hover:text-blue-500 transition-colors duration-200"
+            >Reviews</a
+          >
+          <a
+            href="#contact"
+            class="text-[#285260] hover:text-blue-500 transition-colors duration-200"
+            >Contact</a
+          >
+        </div>
+        <div class="md:hidden">
+          <button class="text-[#285260] focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <header class="hero-section">
+      <div class="container mx-auto max-w-7xl">
+        <div
+          class="hero-title-box p-8 md:p-12 rounded-xl text-center shadow-lg"
+        >
+          <h1
+            class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 md:mb-8 font-playfair"
+          >
+            The West Coast Wedding Officiant
+          </h1>
+
+          <h2 class="text-xl md:text-2xl font-medium">
+            Connecting Couples | Celebrating Love | Officiating Vows
+          </h2>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 md:py-24 max-w-7xl">
+      <section
+        id="about"
+        class="text-center mb-16 md:mb-24 bg-[#ece0d5] p-8 md:p-12 rounded-xl"
+      >
+        <h2 class="text-5xl md:text-6xl font-bold mb-4">What Sets Us Apart</h2>
+        <p class="text-xl md:text-2xl max-w-3xl mx-auto text-[#285260]">
+          Expert guidance and bespoke ceremonies make every West Coast wedding
+          unforgettable, seamless, and deeply heartfelt
+        </p>
+      </section>
+
+      <section id="stats" class="mb-16 md:mb-24 flex justify-center">
+        <div
+          class="stats-background stats-text p-8 md:p-12 rounded-xl shadow-xl w-full max-w-4xl text-center"
+        >
+          <h3 class="text-3xl font-bold mb-6">Experience That Counts</h3>
+          <div
+            class="flex flex-col md:flex-row justify-around items-center space-y-8 md:space-y-0"
+          >
+            <div class="flex flex-col items-center">
+              <span class="text-6xl md:text-8xl font-extrabold mb-1">34</span>
+              <span class="text-xl font-medium">Years in Ministry</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-6xl md:text-8xl font-extrabold mb-1"
+                >5,500+</span
+              >
+              <span class="text-xl font-medium">Couples United</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="meet-david"
+        class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 mb-16 md:mb-24 p-8 md:p-12"
+      >
+        <div
+          class="flex-shrink-0 w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl"
+        >
+          <img
+            src="Images/David Smit.jpg.jpg"
+            alt="A photo of David, the wedding officiant."
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="max-w-xl text-center md:text-left">
+          <h2 class="text-5xl md:text-6xl font-bold mb-4">Meet David</h2>
+          <h3 class="text-2xl md:text-3xl font-semibold mb-6">
+            Proven Experience. Pure Joy.
+          </h3>
+          <p class="text-[#285260] text-xl md:text-2xl">
+            As a lead pastor and dedicated officiant, I bring the unwavering
+            expertise of a 34-year ministry career and thousands of ceremonies
+            to your day. This is more than a service—it's my calling to craft a
+            memorable, authentic ceremony for your love story. I personally
+            guarantee that every detail is flawlessly managed, ensuring your
+            only focus is the joy of starting your forever.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="partnerships"
+        class="text-center mb-16 md:mb-24 bg-[#dadddf] p-8 md:p-12 rounded-xl"
+      >
+        <h2 class="text-5xl md:text-6xl font-bold mb-4">
+          Collaborations & Partnerships
+        </h2>
+        <p class="text-[#285260] text-xl md:text-2xl max-w-3xl mx-auto mb-8">
+          I'm proud to partner with some of the most beautiful oceanfront venues
+          and talented wedding planners in the Western Cape. We work together to
+          ensure your day runs smoothly, from a stunning backdrop to a flawless
+          ceremony.
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-12 mt-8">
+          <!-- Sea Trader Venue -->
+          <div class="flex flex-col items-center w-1/3 sm:w-1/4 md:w-1/4">
+            <a href="https://www.seatrader.co.za/" target="_blank">
+              <img
+                src="Logo/sea-trader-logo.jpg"
+                alt="Coastal Venues icon"
+                class="w-32 h-32 rounded-full mb-4 shadow-lg object-cover"
+              />
+            </a>
+            <div class="text-lg font-semibold text-[#285260]">
+              The Sea Trader Venue
+            </div>
+          </div>
+
+          <!-- Tying Knots Weddings & Events -->
+          <div class="flex flex-col items-center w-1/3 sm:w-1/4 md:w-1/4">
+            <a href="https://tyingknots.co.za/" target="_blank">
+              <img
+                src="Logo/tying knots-lgo.jpg"
+                alt="Local Planners icon"
+                class="w-32 h-32 rounded-full mb-4 shadow-lg object-cover"
+              />
+            </a>
+            <div class="text-lg font-semibold text-[#285260]">
+              Tying Knots Weddings & Events
+            </div>
+          </div>
+
+          <!-- Strandkombuis Yzerfontein -->
+          <div class="flex flex-col items-center w-1/3 sm:w-1/4 md:w-1/4">
+            <a href="https://www.strandkombuis.co.za/" target="_blank">
+              <img
+                src="Logo/Strandkombuis-logo.jpg"
+                alt="Event Stylists icon"
+                class="w-32 h-32 rounded-full mb-4 shadow-lg object-cover"
+              />
+            </a>
+            <div class="text-lg font-semibold text-[#285260]">
+              Strandkombuis Yzerfontein
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="services"
+        class="text-center mb-16 md:mb-24 bg-[#ece0d5] p-8 md:p-12 rounded-xl"
+      >
+        <h2 class="text-5xl md:text-6xl font-bold mb-8 tracking-tight">
+          Our Services
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8 md:gap-12 items-stretch">
+          <div
+            class="bg-white p-6 rounded-xl shadow-md border border-gray-200 transition-transform duration-200 card-hover-effect flex flex-col items-center text-center h-full"
+          >
+            <div class="min-h-24 flex items-center justify-center">
+              <h3
+                class="text-2xl font-semibold tracking-tight flex items-center justify-center gap-2"
+              >
+                <span class="text-3xl leading-none">📝</span>
+                <span>Legal Registration</span>
+              </h3>
+            </div>
+
+            <p class="text-lg md:text-xl text-[#285260] leading-relaxed">
+              We handle all the legal paperwork to ensure your marriage is
+              officially recognized. We will guide you through the process,
+              making sure all documentation is completed accurately and
+              submitted on time.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-md border border-gray-200 transition-transform duration-200 card-hover-effect flex flex-col items-center text-center h-full"
+          >
+            <div class="min-h-24 flex items-center justify-center">
+              <h3
+                class="text-2xl font-semibold tracking-tight flex items-center justify-center gap-2"
+              >
+                <span class="text-3xl leading-none">❤️</span>
+                <span>Premarital Counseling</span>
+              </h3>
+            </div>
+
+            <p class="text-lg md:text-xl text-[#285260] leading-relaxed">
+              Offering an optional service to help couples prepare for a
+              lifetime together. Counseling sessions provide tools and
+              techniques for effective communication and conflict resolution,
+              strengthening your bond before you say "I do."
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-md border border-gray-200 transition-transform duration-200 card-hover-effect flex flex-col items-center text-center h-full"
+          >
+            <div class="min-h-24 flex items-center justify-center">
+              <h3
+                class="text-2xl font-semibold tracking-tight flex items-center justify-center gap-2"
+              >
+                <span class="text-3xl leading-none">✍️</span>
+                <span>Custom Weddings</span>
+              </h3>
+            </div>
+
+            <p class="text-lg md:text-xl text-[#285260] leading-relaxed">
+              Your love story is extraordinary, and your ceremony should be too.
+              We specialize in crafting fully custom ceremonies that reflect
+              your journey as a couple.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="reviews"
+        class="text-center mb-16 md:mb-24 bg-[#dadddf] p-8 md:p-12 rounded-xl"
+      >
+        <h2 class="text-5xl md:text-6xl font-bold mb-4">Testimonials</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+            <p class="italic text-[#285260] mb-4">
+              "Our ceremony with David was a true blessing."
+            </p>
+            <p class="font-semibold text-[#285260]">
+              -John and Lindi, Paternoster
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+            <p class="italic text-[#285260] mb-4">
+              "What an awesome day! We couldn't have asked for a better
+              officiant to be a part of our wedding."
+            </p>
+            <p class="font-semibold text-[#285260]">- Sam and Kim, Cape Town</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+            <p class="italic text-[#285260] mb-4">
+              "Our wedding ceremony was an absolute dream, and it's all thanks
+              to David's incredible guidance."
+            </p>
+            <p class="font-semibold text-[#285260]">
+              - Hendrik and Nadine, Darling
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-16 md:mb-24 bg-[#ece0d5] p-8 md:p-12 rounded-xl">
+        <h2 class="text-center text-5xl md:text-6xl font-bold mb-8">
+          Past Weddings
+        </h2>
+        <div class="carousel-container max-w-4xl mx-auto">
+          <img
+            class="carousel-slide active"
+            src="Images/1234.jpg"
+            alt="A photo from a past wedding ceremony."
+          />
+          <img
+            class="carousel-slide"
+            src="Images/Partnoster.jpg"
+            alt="A photo from a past wedding ceremony."
+          />
+          <img
+            class="carousel-slide"
+            src="Images/new..html.jpeg"
+            alt="A photo from a past wedding ceremony."
+          />
+
+          <img
+            class="carousel-slide"
+            src="Images/ST Helena.jpg"
+            alt="A photo from a past wedding ceremony."
+          />
+          <button
+            class="carousel-nav left-4 bg-white/50 p-3 rounded-full shadow-lg hover:bg-white/80 transition-colors duration-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-gray-800"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+          <button
+            class="carousel-nav right-4 bg-white/50 p-3 rounded-full shadow-lg hover:bg-white/80 transition-colors duration-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-gray-800"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="text-center bg-[#dadddf] p-8 md:p-12 rounded-xl shadow-lg"
+      >
+        <h2 class="text-5xl md:text-6xl font-bold mb-4">
+          Ready to Book Your Perfect Ceremony?
+        </h2>
+        <p class="text-xl md:text-2xl text-[#285260] mb-8">
+          Let's start the conversation about your special day. Fill out the form
+          below to get in touch!
+        </p>
+
+        <div class="max-w-xl mx-auto">
+          <form
+            action="https://formspree.io/f/mblaqnwj"
+            method="POST"
+            class="flex flex-col gap-4"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              class="p-3 rounded border border-gray-300 w-full"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              class="p-3 rounded border border-gray-300 w-full"
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Your Phone Number"
+              class="p-3 rounded border border-gray-300 w-full"
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+              class="p-3 rounded border border-gray-300 w-full h-32"
+            ></textarea>
+            <button
+              type="submit"
+              class="bg-[#285260] text-white p-3 rounded hover:bg-blue-700 transition-colors"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 md:py-12">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-center md:text-left"
+      >
+        <div class="mb-4 md:mb-0">
+          <p>&copy; 2024 David, Wedding Officiant. All Rights Reserved.</p>
+        </div>
+        <div class="flex items-center space-x-6 mb-4 md:mb-0">
+          <a
+            href="tel:555-555-5555"
+            class="flex items-center text-white hover:text-gray-300 transition-colors duration-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              />
+            </svg>
+            <span>(+27) 82 465 0699</span>
+          </a>
+          <a
+            href="mailto:david@example.com"
+            class="flex items-center text-white hover:text-gray-300 transition-colors duration-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            <span> davidsmit@mweb.co.za</span>
+          </a>
+        </div>
+        <div class="flex space-x-4">
+          <a
+            href="#"
+            target="_blank"
+            aria-label="Facebook"
+            class="text-white hover:text-gray-300 transition-colors duration-200"
+          >
+            <svg
+              fill="currentColor"
+              stroke="none"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14 13.5h2.46l.36-2.85h-2.82V8.7c0-.82.35-1.38 1.44-1.38h1.54V4.9c-.27-.04-.8-.1-1.92-.1-1.92 0-3.23 1.17-3.23 3.32v2.46H8v2.85h2.78V23h3.22v-9.5z"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            aria-label="Instagram"
+            class="text-white hover:text-gray-300 transition-colors duration-200"
+          >
+            <svg
+              fill="currentColor"
+              stroke="none"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2c2.72 0 3.06.01 4.12.06 1.05.05 1.79.22 2.42.46.6.25 1.05.6 1.54 1.1s.85.94 1.1 1.54c.24.63.4 1.37.46 2.42.05 1.06.06 1.4.06 4.12v.01c0 2.72-.01 3.06-.06 4.12-.05 1.05-.22 1.79-.46 2.42-.25.6-.6 1.05-1.1 1.54s-.94.85-1.54 1.1c-.63.24-1.37.4-2.42.46-1.06.05-1.4.06-4.12.06h-.01c-2.72 0-3.06-.01-4.12-.06-1.05-.05-1.79-.22-2.42-.46-.6-.25-.6-1.05-1.1-1.54s-.85-.94-1.1-1.54c-.24-.63-.4-1.37-.46-2.42-.05-1.06-.06-1.4-.06-4.12v-.01c0-2.72.01-3.06.06-4.12.05-1.05.22-1.79.46-2.42.25-.6.6-1.05 1.1-1.54s.94-.85 1.54-1.1c.63-.24 1.37-.4 2.42-.46C8.94 2.01 9.28 2 12 2zm0 1.5a8.5 8.5 0 100 17 8.5 8.5 0 000-17zM12 8a4 4 0 110 8 4 4 0 010-8zm0 1.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zm5.5-2.5a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const slides = document.querySelectorAll(".carousel-slide");
+        const prevButton = document.querySelector(
+          ".carousel-nav:nth-of-type(1)"
+        );
+        const nextButton = document.querySelector(
+          ".carousel-nav:nth-of-type(2)"
+        );
+        let currentSlide = 0;
+
+        function showSlide(index) {
+          slides.forEach((slide) => {
+            slide.classList.remove("active");
+          });
+          slides[index].classList.add("active");
+        }
+
+        prevButton.addEventListener("click", () => {
+          currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+          showSlide(currentSlide);
+        });
+
+        nextButton.addEventListener("click", () => {
+          currentSlide = (currentSlide + 1) % slides.length;
+          showSlide(currentSlide);
+        });
+
+        showSlide(currentSlide);
+      });
+    </script>
+  </body>
+</html>
